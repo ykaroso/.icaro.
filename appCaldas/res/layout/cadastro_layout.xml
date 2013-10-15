@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+	android:id="@+id/widget35"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="E-Mail"
+	android:textSize="16sp"
+	android:layout_x="21dp"
+	android:layout_y="229dp" />
+<TextView
+	android:id="@+id/widget36"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Telefone"
+	android:textSize="16sp"
+	android:layout_x="19dp"
+	android:layout_y="169dp" />
+<TextView
+	android:id="@+id/widget37"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Nome"
+	android:textSize="16sp"
+	android:gravity="center"
+	android:layout_x="19dp"
+	android:layout_y="108dp" />
+
+<EditText
+    android:id="@+id/widget39"
+    android:layout_width="207dp"
+    android:layout_height="wrap_content"
+    android:layout_x="86dp"
+    android:layout_y="220dp"
+    android:autoLink="email"
+    android:inputType="textEmailAddress"
+    android:maxLines="1"
+    android:text=""
+    android:textSize="18sp" />
+
+<EditText
+    android:id="@+id/widget40"
+    android:layout_width="117dp"
+    android:layout_height="wrap_content"
+    android:layout_x="163dp"
+    android:layout_y="161dp"
+    android:autoLink="phone"
+    android:inputType="phone"
+    android:maxLines="1"
+    android:text=""
+    android:textSize="18sp" />
+
+<EditText
+    android:id="@+id/widget41"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="105dp"
+    android:layout_y="162dp"
+    android:editable="false"
+    android:enabled="false"
+    android:text="62"
+    android:textSize="18sp" />
+
+<EditText
+    android:id="@+id/widget42"
+    android:layout_width="204dp"
+    android:layout_height="wrap_content"
+    android:layout_x="87dp"
+    android:layout_y="100dp"
+    android:autoLink="none"
+    android:inputType="textPersonName"
+    android:maxLines="1"
+    android:text=""
+    android:textSize="18sp" />
+
+<TextView
+	android:id="@+id/widget43"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Cadastro"
+	android:textSize="26sp"
+	android:textStyle="bold"
+	android:layout_x="106dp"
+	android:layout_y="26dp" />
+
+<Button
+    android:id="@+id/widget32"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="109dp"
+    android:layout_y="349dp"
+    android:text="Cadastrar"
+    android:textSize="18sp" />
+
+</AbsoluteLayout>
+
