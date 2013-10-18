@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends Activity {
 
@@ -20,12 +21,20 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.main_layout);
 		
 		Button bEditCad = (Button) findViewById(R.id.bEditCad);
-
+		final ViewFlipper vf = (ViewFlipper)findViewById(R.id.container);
+		Button bTel = (Button) findViewById(R.id.bTel);
+		
 		bEditCad.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent it = new Intent(MainActivity.this,
 						CadastrarUsuario.class);
 				startActivity(it);
+			}
+		});
+		
+		bTel.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				vf.setDisplayedChild(1);
 			}
 		});
 
