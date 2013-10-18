@@ -38,3 +38,17 @@ public class MainActivity extends Activity {
 		return true;
 	}
 }
+
+/*
+ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
+For Button onClickListener:
+
+button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                vf.setDisplayedChild(1);
+            }
+        });
+*/
