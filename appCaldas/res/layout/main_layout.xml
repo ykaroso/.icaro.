@@ -47,13 +47,16 @@
             android:text="Site" />
     </LinearLayout>
 
-    
     <ViewFlipper
-    android:id="@+id/container"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="376dp" >
 
-    <include android:id="@+id/main" layout="@layout/main_container_layout"/>
+    <include
+        android:id="@+id/main"
+        android:layout_height="match_parent"
+        layout="@layout/main_container_layout" />
+
     <include android:id="@+id/cad" layout="@layout/cadastro_layout"/>
 
 	</ViewFlipper>
