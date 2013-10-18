@@ -3,7 +3,6 @@ package com.appcaldas;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -40,3 +39,17 @@ public class MainActivity extends Activity {
 		return true;
 	}
 }
+
+/*
+ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
+For Button onClickListener:
+
+button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                vf.setDisplayedChild(1);
+            }
+        });
+*/
