@@ -10,27 +10,33 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_layout);
-        
-        Button bEditCad = (Button) findViewById(R.id.bEditCad);
-        
-        bEditCad.setOnClickListener(new Button.OnClickListener(){
-			public void onClick(View v){
-				Intent it = new Intent(MainActivity.this,CadastrarUsuario.class);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		if (CadastrarUsuario.cadastro == null) {
+			Intent it = new Intent(MainActivity.this, CadastrarUsuario.class);
+			startActivity(it);
+		}
+		setContentView(R.layout.main_layout);
+		
+		
+		Button bEditCad = (Button) findViewById(R.id.bEditCad);
+
+		bEditCad.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				Intent it = new Intent(MainActivity.this,
+						CadastrarUsuario.class);
 				startActivity(it);
-			}	
+			}
 		});
-    }
 
+	}
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-    
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
 }
