@@ -1,99 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout
-	android:id="@+id/widget0"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	xmlns:android="http://schemas.android.com/apk/res/android">
-<TextView
-	android:id="@+id/widget35"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="E-Mail"
-	android:textSize="16sp"
-	android:layout_x="21dp"
-	android:layout_y="229dp" />
-<TextView
-	android:id="@+id/widget36"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Telefone"
-	android:textSize="16sp"
-	android:layout_x="19dp"
-	android:layout_y="169dp" />
-<TextView
-	android:id="@+id/widget37"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Nome"
-	android:textSize="16sp"
-	android:gravity="center"
-	android:layout_x="19dp"
-	android:layout_y="108dp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|top"
+    android:orientation="vertical" >
 
-<EditText
-    android:id="@+id/lEmail"
-    android:layout_width="207dp"
-    android:layout_height="wrap_content"
-    android:layout_x="86dp"
-    android:layout_y="220dp"
-    android:autoLink="email"
-    android:inputType="textEmailAddress"
-    android:maxLines="1"
-    android:text=""
-    android:textSize="18sp" />
+    <TextView
+        android:id="@+id/lCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center|center_vertical"
+        android:text="Cadastro"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
-<EditText
-    android:id="@+id/lTelefone"
-    android:layout_width="117dp"
-    android:layout_height="wrap_content"
-    android:layout_x="163dp"
-    android:layout_y="161dp"
-    android:autoLink="phone"
-    android:inputType="phone"
-    android:maxLines="1"
-    android:text=""
-    android:textSize="18sp" />
+    <LinearLayout
+        android:id="@+id/widget1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center" >
 
-<EditText
-    android:id="@+id/lDDD"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_x="105dp"
-    android:layout_y="162dp"
-    android:editable="false"
-    android:text="64"
-    android:textSize="18sp" />
+        <TextView
+            android:id="@+id/widget37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15dp"
+            android:text="Nome"
+            android:textSize="16sp" />
 
-<EditText
-    android:id="@+id/lNome"
-    android:layout_width="204dp"
-    android:layout_height="wrap_content"
-    android:layout_x="87dp"
-    android:layout_y="100dp"
-    android:autoLink="none"
-    android:inputType="textPersonName"
-    android:maxLines="1"
-    android:text=""
-    android:textSize="18sp" />
+        <EditText
+            android:id="@+id/lNome"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.47"
+            android:autoLink="none"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="18sp" />
+    </LinearLayout>
 
-<TextView
-	android:id="@+id/lCadastro"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Cadastro"
-	android:textSize="26sp"
-	android:textStyle="bold"
-	android:layout_x="106dp"
-	android:layout_y="26dp" />
+    <LinearLayout
+        android:id="@+id/widget2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center" >
 
-<Button
-    android:id="@+id/bCadastrar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_x="109dp"
-    android:layout_y="349dp"
-    android:text="Cadastrar"
-    android:textSize="18sp" />
+        <TextView
+            android:id="@+id/widget36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="Telefone"
+            android:textSize="16sp" />
 
-</AbsoluteLayout>
+        <EditText
+            android:id="@+id/lDDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:enabled="false"
+            android:text="64"
+            android:textSize="18sp" >
 
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/lTelefone"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.19"
+            android:autoLink="phone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/widget35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15dp"
+            android:text="E-Mail"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/lEmail"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.03"
+            android:autoLink="email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+
+        android:gravity="bottom|center" >
+
+        <Button
+            android:id="@+id/bCadastrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="Salvar"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

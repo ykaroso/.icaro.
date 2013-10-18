@@ -15,14 +15,37 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/secondary_text_light_nodisable" />
 
-    <TextView
-        android:id="@+id/lTitle2"
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Caldas Novas"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/secondary_text_light_nodisable" />
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/bEditCad"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="EditCad" />
+
+        <TextView
+            android:id="@+id/lTitle2"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Caldas Novas"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/secondary_text_light_nodisable" />
+
+        <Button
+            android:id="@+id/bGoToSite"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Site" />
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/masterLayout"
@@ -110,7 +133,7 @@
                     android:text="Limpeza Urbana" />
 
                 <Button
-                    android:id="@+id/Button01"
+                    android:id="@+id/bCancel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.18"
@@ -357,13 +380,13 @@
 
         <Button
             android:id="@+id/bSolic"
-            android:layout_width="wrap_content"
+            android:layout_width="92dp"
             android:layout_height="match_parent"
             android:text="Solicitações" />
 
         <Button
             android:id="@+id/bProt"
-            android:layout_width="wrap_content"
+            android:layout_width="83dp"
             android:layout_height="match_parent"
             android:text="Protocolos" />
 

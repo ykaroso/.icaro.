@@ -33,7 +33,7 @@ public class CadastrarUsuario extends Activity {
 				cadastro.setTelefone(telefone.getText().toString());
 				cadastro.setEmail(email.getText().toString());
 				
-				Log.i("1", "Nome: "+cadastro.getNome()+"Telefone: "+cadastro.getDdd()+cadastro.getTelefone()+"Email: "+cadastro.getEmail());
+				Log.i("1", "Nome: "+cadastro.getNome()+"\nTelefone: "+cadastro.getDdd()+cadastro.getTelefone()+"\nEmail: "+cadastro.getEmail());
 			}
 		});	 
 		
