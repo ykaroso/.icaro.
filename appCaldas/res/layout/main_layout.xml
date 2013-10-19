@@ -23,9 +23,8 @@
         <Button
             android:id="@+id/bEditCad"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="0dp"
+            android:layout_width="37dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="EditCad" />
 
         <TextView
@@ -41,9 +40,8 @@
         <Button
             android:id="@+id/bGoToSite"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Site" />
     </LinearLayout>
 
