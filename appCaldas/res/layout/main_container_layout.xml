@@ -57,11 +57,11 @@
                     android:text="Buraco na Via" />
 
                 <Button
-                    android:id="@+id/Button05"
+                    android:id="@+id/bTestVideo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.18"
-                    android:text="Button" />
+                    android:text="TEST VIDEO" />
 
                 <Button
                     android:id="@+id/Button04"

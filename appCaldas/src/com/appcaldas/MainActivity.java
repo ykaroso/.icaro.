@@ -98,6 +98,7 @@ public class MainActivity extends Activity {
 		// --------------- Botões do Centrais ---------------- //
 		
 		Button bSolicita = (Button) findViewById(R.id.bCallSolicForTest);
+		Button bTestVideo = (Button) findViewById(R.id.bTestVideo);
 		
 		bSolicita.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
@@ -105,6 +106,13 @@ public class MainActivity extends Activity {
 				
 				//Intent it = new Intent(MainActivity.this,"CRIAR CLASSE <Solicitacao>".class);
 				//startActivity(it);
+			}
+		});
+		
+		bTestVideo.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				Intent it = new Intent(MainActivity.this,PlayVideo.class);
+				startActivity(it);
 			}
 		});
 		

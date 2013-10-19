@@ -42,7 +42,6 @@ public class PlayVideo extends Activity
               mediaController.setAnchorView(videoView);           
 
                Uri video = Uri.parse(Stream.getCurrentStream());             
-               videoView.setMediaController(mediaController);
                videoView.setVideoURI(video);
                videoView.requestFocus();              
                videoView.setOnPreparedListener(new OnPreparedListener()
@@ -50,12 +49,7 @@ public class PlayVideo extends Activity
                    public void onPrepared(MediaPlayer mp)
                    {                  
                        progressDialog.dismiss();     
-                       try{
-                    	   videoView.start(); 
-                       }catch(Exception e){
-                    	   progressDialog.dismiss();
-                       }
-                       
+                       videoView.start();                     
                    }
                });           
             }
