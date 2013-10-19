@@ -22,11 +22,11 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/Button09"
+                    android:id="@+id/bCallSolicForTest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.18"
-                    android:text="Sinal de Trânsito" />
+                    android:text="TESTE AQUI" />
 
                 <Button
                     android:id="@+id/Button08"

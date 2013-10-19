@@ -49,38 +49,52 @@
 
     <ViewFlipper
         android:id="@+id/container"
-        android:layout_width="wrap_content"
-        android:layout_height="376dp" >
+        android:layout_width="match_parent"
+        android:layout_height="474dp" >
 
     <include
         android:id="@+id/main"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         layout="@layout/main_container_layout" />
 
-    <include android:id="@+id/cad" layout="@layout/cadastro_layout"/>
+    <include
+        android:id="@+id/prot"
+        android:layout_height="match_parent"
+        layout="@layout/protocols_container_layout" />
+
+    <include
+        android:id="@+id/cams"
+        android:layout_height="match_parent"
+        layout="@layout/cams_container_layout" />
+
+    <include
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/phones_container_layout" />
 
 	</ViewFlipper>
-    
-    
     
     <LinearLayout
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="match_parent"
         android:layout_margin="0dp"
+        android:layout_marginBottom="0dp"
         android:background="@android:color/black"
         android:gravity="bottom|center"
         android:orientation="horizontal" >
 
         <Button
             android:id="@+id/bSolic"
-            android:layout_width="92dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Solicitações" />
 
         <Button
             android:id="@+id/bProt"
-            android:layout_width="83dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Protocolos" />
 
@@ -92,7 +106,7 @@
 
         <Button
             android:id="@+id/bTel"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.19"
             android:text="Telefones Úteis" />
