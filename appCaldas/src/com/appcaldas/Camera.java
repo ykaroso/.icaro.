@@ -1,21 +1,22 @@
 package com.appcaldas;
 
-import domain.VideoLinks;
+import domain.DadosCamera;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 
-public class PlayVideo extends Activity
+public class Camera extends Activity
 {
 
- private static ProgressDialog progressDialog;
- private VideoLinks Stream = new VideoLinks();
+ private static ProgressDialog progressDialog; 
  String videourl;  
  VideoView videoView ;
 
@@ -24,10 +25,17 @@ public class PlayVideo extends Activity
  {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.camviewer_layout);
+  
+  Intent it = getIntent();
+	
+  TextView titulo = (TextView) findViewById(R.id.tituloCamera);
+	
+  titulo.setText(it.getStringExtra("paramTitle"));
+  videourl = it.getStringExtra("paramLink");
 
   videoView = (VideoView) findViewById(R.id.videoStream);
 
-  progressDialog = ProgressDialog.show(PlayVideo.this, "", "Carregando...", true);
+  progressDialog = ProgressDialog.show(Camera.this, "", "Carregando...", true);
   progressDialog.setCancelable(true);  
 
   Play();
@@ -38,10 +46,10 @@ public class PlayVideo extends Activity
   try
        {      
               getWindow().setFormat(PixelFormat.TRANSLUCENT);
-              MediaController mediaController = new MediaController(PlayVideo.this);
+              MediaController mediaController = new MediaController(Camera.this);
               mediaController.setAnchorView(videoView);           
 
-               Uri video = Uri.parse(Stream.getCurrentStream());             
+               Uri video = Uri.parse(videourl);             
                videoView.setVideoURI(video);
                videoView.requestFocus();              
                videoView.setOnPreparedListener(new OnPreparedListener()

@@ -22,7 +22,7 @@ public class CadastrarUsuario extends Activity {
 		final EditText telefone = (EditText) findViewById(R.id.lTelefone);
 		final EditText email = (EditText) findViewById(R.id.lEmail);
 		Button salvar = (Button) findViewById(R.id.bCadastrar);
-		Button cancelar = (Button) findViewById(R.id.bCancel);
+		Button cancelar = (Button) findViewById(R.id.bCallSolic5);
 
 		if (cadastro != null) {
 

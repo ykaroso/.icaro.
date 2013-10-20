@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class RegisterSolicitation extends Activity{
 	
@@ -23,6 +24,11 @@ public class RegisterSolicitation extends Activity{
 		setContentView(R.layout.solicitations_layout);
 		
 		solicitacao = new Solicitation();
+		
+		Intent it = getIntent();
+		
+		TextView tipoDeSolicitacao = (TextView) findViewById(R.id.lTipoSolic);
+		tipoDeSolicitacao.setText(it.getStringExtra("paramTitle"));
 		
 		final ImageButton camera = (ImageButton) findViewById(R.id.bCamera);
 		final EditText localizacao = (EditText) findViewById(R.id.tLocalizacao);

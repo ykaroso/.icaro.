@@ -8,7 +8,7 @@
     android:paddingBottom="5dp" >
 
     <TextView
-        android:id="@+id/tTipoSolic"
+        android:id="@+id/lTipoSolic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

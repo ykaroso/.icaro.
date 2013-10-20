@@ -9,7 +9,17 @@ public class Solicitation {
 	Bitmap foto;
 	String localizacao;
 	String descricao;
-	//Criar <Tipo> coordenada;
+	int tipoRef;
+	String[] tipo = {
+			"Sinal de Trânsito",
+			"Bucaro na Via",
+			"Limpeza Urbana",
+			"Iluminção Pública",
+			"Tipo de Solicitação (4)",
+			"Tipo de Solicitação (5)",
+			"Tipo de Solicitação (6)",
+			"Tipo de Solicitação (7)",
+			"Tipo de Solicitação (8)"};
 	
 	public Bitmap getFoto() {
 		return foto;
@@ -29,5 +39,9 @@ public class Solicitation {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	public String getTypeName(int position) {
+		return tipo[position];
+	}
+
 
 }

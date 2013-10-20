@@ -1,323 +1,353 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/masterLayout"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/masterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.41"
+    android:background="@drawable/backgound"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/widget0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:text="Solicitações"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/widget000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.41"
-        android:background="@drawable/backgound"
-        android:orientation="vertical"
-        android:paddingBottom="5dp" >
-	
+        android:gravity="center" >
+
         <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="29dp"
-            android:gravity="center" >
+            android:id="@+id/widget00"
+            android:layout_width="101dp"
+            android:layout_height="244dp"
+            android:orientation="vertical" >
 
-            <LinearLayout
-                android:id="@+id/LinearLayout02"
-                android:layout_width="101dp"
-                android:layout_height="244dp"
-                android:orientation="vertical" >
+            <Button
+                android:id="@+id/bCallSolic0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text="Sinal de Trânsito" />
 
-                <Button
-                    android:id="@+id/bCallSolicForTest"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="TESTE AQUI" />
+            <Button
+                android:id="@+id/bCallSolic3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text="Iluminação Pública" />
 
-                <Button
-                    android:id="@+id/Button08"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="Iluminação Pública" />
-
-                <Button
-                    android:id="@+id/Button07"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="Ocupação irregular" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout01"
-                android:layout_width="101dp"
-                android:layout_height="244dp"
-                android:orientation="vertical" >
-
-                <Button
-                    android:id="@+id/Button06"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="Buraco na Via" />
-
-                <Button
-                    android:id="@+id/bTestVideo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="TEST VIDEO" />
-
-                <Button
-                    android:id="@+id/Button04"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="Remoção de Entulhos" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout3"
-                android:layout_width="101dp"
-                android:layout_height="244dp"
-                android:orientation="vertical" >
-
-                <Button
-                    android:id="@+id/Button02"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="Limpeza Urbana" />
-
-                <Button
-                    android:id="@+id/bCancel"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="Desobstrução de Bueiro" />
-
-                <Button
-                    android:id="@+id/Button03"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.18"
-                    android:text="                   Outros" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/bCallSolic6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text=" " />
         </LinearLayout>
 
-        <TableLayout
+        <LinearLayout
+            android:id="@+id/widget01"
+            android:layout_width="101dp"
+            android:layout_height="244dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bCallSolic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text="Buraco na Via" />
+
+            <Button
+                android:id="@+id/bCallSolic4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/bCallSolic7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/widget02"
+            android:layout_width="101dp"
+            android:layout_height="244dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bCallSolic2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text="Limpeza Urbana" />
+
+            <Button
+                android:id="@+id/bCallSolic5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/bCallSolic8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18"
+                android:text=" " />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/linearLayout1"
-            android:layout_marginBottom="16dp" >
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-            <TableRow
-                android:id="@+id/TableRow14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:layout_marginBottom="16dp" >
 
-                <TextView
-                    android:id="@+id/TextView14"
+                <TableRow
+                    android:id="@+id/TableRow14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView13"
+                <TableRow
+                    android:id="@+id/TableRow12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView12"
+                <TableRow
+                    android:id="@+id/TableRow13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView11"
+                <TableRow
+                    android:id="@+id/TableRow15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView10"
+                <TableRow
+                    android:id="@+id/TableRow10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow09"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView09"
+                <TableRow
+                    android:id="@+id/TableRow08"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow08"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView08"
+                <TableRow
+                    android:id="@+id/TableRow09"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow07"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView07"
+                <TableRow
+                    android:id="@+id/TableRow11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow06"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView06"
+                <TableRow
+                    android:id="@+id/TableRow06"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow05"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView05"
+                <TableRow
+                    android:id="@+id/TableRow04"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow04"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView04"
+                <TableRow
+                    android:id="@+id/TableRow05"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow03"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView03"
+                <TableRow
+                    android:id="@+id/TableRow07"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView02"
+                <TableRow
+                    android:id="@+id/TableRow03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView01"
+                <TableRow
+                    android:id="@+id/TableRow02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
+                    android:gravity="center" >
 
-            <TableRow
-                android:id="@+id/TableRow17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center" >
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
-                <TextView
-                    android:id="@+id/TextView20"
+                <TableRow
+                    android:id="@+id/TableRow01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="~~~~~~~~ Menssagem ~~~~~~~~"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </TableRow>
-        </TableLayout>
+                    android:gravity="center" >
 
-    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
 
+                <TableRow
+                    android:id="@+id/TableRow17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/TextView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="~~~~~~~~ Menssagem ~~~~~~~~"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
