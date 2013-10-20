@@ -102,10 +102,8 @@ public class MainActivity extends Activity {
 		
 		bSolicita.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
-				setContentView(R.layout.solicitations_layout); //Teste para visualizar a tela
-				
-				//Intent it = new Intent(MainActivity.this,"CRIAR CLASSE <Solicitacao>".class);
-				//startActivity(it);
+				Intent it = new Intent(MainActivity.this, RegisterSolicitation.class);
+				startActivity(it);
 			}
 		});
 		

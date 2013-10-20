@@ -25,16 +25,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="CadastrarUsuario">
+        <activity android:name="CadastrarUsuario"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name="PlayVideo">
+        <activity android:name="PlayVideo"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
-        </activity>        
+        </activity>
+        <activity android:name="RegisterSolicitation"
+            android:screenOrientation="portrait"></activity>        
     </application>
 
 </manifest>
