@@ -2,9 +2,11 @@ package com.appcaldas;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import domain.Solicitation;
 import domain.DadosCamera;
+import domain.Telefones;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -12,6 +14,8 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -22,6 +26,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	private Solicitation solicitation = new Solicitation();
 	private DadosCamera dadosCamera = new DadosCamera();
+	private Telefones telefone = new Telefones();
 	
 	//Endereçamento dos containers
 	private final static int CONTAINER_MAIN = 0;
@@ -168,23 +173,22 @@ public class MainActivity extends Activity implements OnClickListener{
 					buttonsCam[i].setOnClickListener(this);
 			break;
 			case CONTAINER_TELEFONE:
-				/*
-				  ListView listaTelefones;
-				  ArrayAdapter<String> listAdapter;
-
-				listaTelefones = (ListView) findViewById( R.id.lvTelefones);
-				String[] planets = new String[] { "92505689", "32734932", "Earth", "Mars",
-				                                  "Jupiter", "Saturn", "Uranus", "Neptune"};  
-				ArrayList<String> planetList = new ArrayList<String>();
-				planetList.addAll( Arrays.asList(planets) );
-
-				listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, planetList);
-
-				listaTelefones.setAdapter( listAdapter ); 
-				*/
-				 Intent it = new Intent(Intent.ACTION_CALL);
-				 it.setData(Uri.parse("tel:92099009"));
-				 startActivity(it);
+			    ListView lv;
+			    List<String> lista = new ArrayList<String>();
+			    lv = (ListView)findViewById(R.id.lvTelefones);
+			    
+			    for(int i = 0 ; i < telefone.lenght() ; i++){
+			    	lista.add(telefone.getPhonesName(i));
+			    }
+			    
+			    lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,lista));
+			    lv.setOnItemClickListener(new OnItemClickListener(){
+					public void onItemClick(AdapterView<?> arg0,View arg1, int numeroSelecionado, long arg3) {
+						Intent it = new Intent(Intent.ACTION_CALL);
+						it.setData(Uri.parse(telefone.getNumber(numeroSelecionado)));
+						startActivity(it);								
+					}
+			     });
 			break;			
 		}
 	}
