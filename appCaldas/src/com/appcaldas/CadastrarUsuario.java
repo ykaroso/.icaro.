@@ -38,8 +38,11 @@ public class CadastrarUsuario extends Activity {
 
 		salvar.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
+				Log.i("0", "Validar: "
+						+ validarEmail(email.getText().toString())
+						+ validarTelefone(telefone.getText().toString())+"Nome: "+nome.getText().toString());
 				try {
-					if (nome.getText().toString().replace(" ", "") == "" || nome.getText().toString()==null) {
+					if (nome.getText().toString().replace(" ", "") == "" || nome.getText().toString()== "") {
 						throw new Validation("Preencha o campo nome!");
 					}
 					if (validarTelefone(telefone.getText().toString())==false) {
@@ -50,7 +53,7 @@ public class CadastrarUsuario extends Activity {
 					}
 					Log.i("0", "Validar: "
 							+ validarEmail(email.getText().toString())
-							+ validarTelefone(telefone.getText().toString()));
+							+ validarTelefone(telefone.getText().toString())+"Nome: "+nome.getText().toString());
 
 					cadastro.setNome(nome.getText().toString());
 					cadastro.setDdd(ddd.getText().toString());

@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.Calendar;
+
 import android.graphics.Bitmap;
 import android.widget.ImageView;
 import android.graphics.drawable.BitmapDrawable;
@@ -10,6 +12,7 @@ public class Solicitation {
 	String localizacao;
 	String descricao;
 	int tipoRef;
+	Calendar data;
 	String[] tipo = {
 			"Sinal de Trânsito",
 			"Bucaro na Via",
@@ -20,6 +23,8 @@ public class Solicitation {
 			"Tipo de Solicitação (6)",
 			"Tipo de Solicitação (7)",
 			"Tipo de Solicitação (8)"};
+	int[] tempoReparo = {
+			3,7,10,5,5};
 	
 	public Bitmap getFoto() {
 		return foto;
@@ -42,6 +47,9 @@ public class Solicitation {
 	public String getTypeName(int position) {
 		return tipo[position];
 	}
-
+	public int getTempoReparo(int position) {
+		return tempoReparo[position];
+	}
+	
 
 }
