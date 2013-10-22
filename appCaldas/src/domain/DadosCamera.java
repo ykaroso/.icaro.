@@ -1,8 +1,8 @@
 package domain;
 
 public class DadosCamera {
-	private String links[] = {"","","","","","","",""};
-	private String titles[] = {"Cam0","Cam1","Cam2","Cam3","Cam4","Cam5","Cam6","Cam7"};
+	private String links[] = {"rtmp://www.streambnu.info:1935/goiania3","","","","","","",""};
+	private String titles[] = {"Camera 0","Camera 1","Camera 2","Camera 3","Camera 4","Camera 5","Camera 6","Camera 7"};
 	
 	public String getLinkStream(int id){
 		return links[id];

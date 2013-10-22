@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RegisterSolicitation extends Activity{
 	
@@ -55,6 +56,16 @@ public class RegisterSolicitation extends Activity{
 				
 				Log.i("1", "Localização: " + solicitacao.getLocalizacao() + "\nDescrição: "
 						+ solicitacao.getDescricao());
+				
+				/*
+				try {
+					Mail email = new Mail("", "");
+					email.setBody("Teste");
+					email.send();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				*/
 
 				finish();
 			}

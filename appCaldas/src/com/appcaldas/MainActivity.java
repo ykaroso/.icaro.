@@ -244,9 +244,9 @@ public class MainActivity extends Activity implements OnClickListener{
 	    	
 	        //Bloco das funções dos botôes da cams_container
 	    	case bCam0:
-	    		it = new Intent(this, Camera.class);
-	    		it.putExtra("paramTitle",dadosCamera.getTitle(0));
-	    		it.putExtra("paramLink",dadosCamera.getLinkStream(0));
+	    		it = new Intent(this, Player.class);
+	    		//it.putExtra("paramTitle",dadosCamera.getTitle(0));
+	    		//it.putExtra("paramLink",dadosCamera.getLinkStream(0));
 	    		break;
 	    	case bCam1:
 	    		it = new Intent(this, Camera.class);
