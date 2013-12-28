@@ -9,6 +9,7 @@ import domain.DadosCamera;
 import domain.Telefones;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -40,11 +41,11 @@ public class MainActivity extends Activity implements OnClickListener{
 	private final static int b1 = R.id.bCallSolic1;
 	private final static int b2 = R.id.bCallSolic2;
 	private final static int b3 = R.id.bCallSolic3;
-	private final static int b4 = R.id.bCallSolic4;
-	private final static int b5 = R.id.bCallSolic5;
-	private final static int b6 = R.id.bCallSolic6;
-	private final static int b7 = R.id.bCallSolic7;
-	private final static int b8 = R.id.bCallSolic8;
+	//private final static int b4 = R.id.bCallSolic4;
+	//private final static int b5 = R.id.bCallSolic5;
+	//private final static int b6 = R.id.bCallSolic6;
+	//private final static int b7 = R.id.bCallSolic7;
+	//private final static int b8 = R.id.bCallSolic8;
 	
 	
 	//Botões da tela das cameras - cams_container
@@ -69,12 +70,15 @@ public class MainActivity extends Activity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main_layout);
 		
+		setContentView(R.layout.main_layout);
+			
 		if (CadastrarUsuario.cadastro == null) {
 			Intent it = new Intent(MainActivity.this, CadastrarUsuario.class);
 			startActivity(it);
 		}
+
+	
 		
 		final ViewFlipper container = (ViewFlipper) findViewById(R.id.container);	
 		
@@ -148,18 +152,22 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		// ----------------- FIM BOTÕES GLOBAIS-------------------//
 		
-
-
 	}
 	
 	//BOTOES ESPECIFICOS, CARREGADOS DE ACORDO COM A CHAMADA
 	private void carregaBotoesEspeciicos(int telaAtual){
 		switch(telaAtual){
 			case CONTAINER_MAIN:
-				Button buttonsSolicita[] = {(Button)findViewById(b0),(Button)findViewById(b1),
-						(Button)findViewById(b2),(Button)findViewById(b3),(Button)findViewById(b4),
-						(Button)findViewById(b5),(Button)findViewById(b6),(Button)findViewById(b7),
-						(Button)findViewById(b8)};
+				Button buttonsSolicita[] = {
+						(Button)findViewById(b0),
+						(Button)findViewById(b1),
+						(Button)findViewById(b2),
+						(Button)findViewById(b3),};
+						/*(Button)findViewById(b4),
+						(Button)findViewById(b5),
+						(Button)findViewById(b6),
+						(Button)findViewById(b7),
+						(Button)findViewById(b8)};*/
 				for(int i  = 0; i < buttonsSolicita.length; i++)
 					buttonsSolicita[i].setOnClickListener(this);
 			break;
@@ -224,7 +232,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	    	case b3:
 	    		it = new Intent(this, RegisterSolicitation.class);
 	    		it.putExtra("paramTitle",solicitation.getTypeName(3));break;
-	    	case b4:
+	    	/*case b4:
 	    		it = new Intent(this, RegisterSolicitation.class);
 	    		it.putExtra("paramTitle",solicitation.getTypeName(4));break;
 	    	case b5:
@@ -238,7 +246,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	    		it.putExtra("paramTitle",solicitation.getTypeName(7));break;
 	    	case b8:
 	    		it = new Intent(this, RegisterSolicitation.class);
-	    		it.putExtra("paramTitle",solicitation.getTypeName(8));break;
+	    		it.putExtra("paramTitle",solicitation.getTypeName(8));break;*/
 	    	//FIM main_container
 	    	
 	    	

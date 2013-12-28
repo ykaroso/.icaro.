@@ -3,111 +3,105 @@
     android:id="@+id/mainLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@android:color/black"
+    android:background="#00649F"
     android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/lTitle"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="3599"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@android:color/secondary_text_light_nodisable" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/tarja_logo"
         android:gravity="center" >
 
         <Button
             android:id="@+id/bEditCad"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="37dp"
-            android:layout_height="match_parent"
-            android:text="EditCad" />
-
-        <TextView
-            android:id="@+id/lTitle2"
-            android:layout_width="155dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Caldas Novas"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@android:color/secondary_text_light_nodisable" />
+            android:layout_marginRight="250dp"
+            android:layout_weight="0.00"
+            android:text=" " />
 
         <Button
             android:id="@+id/bGoToSite"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Site" />
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/info"
+            android:text=" " />
+
     </LinearLayout>
 
     <ViewFlipper
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="474dp" >
+        android:layout_height="689dp"
+        android:layout_weight="1" >
 
-    <include
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/main_container_layout" />
+        <include
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/main_container_layout" />
 
-    <include
-        android:id="@+id/prot"
-        android:layout_height="match_parent"
-        layout="@layout/protocols_container_layout" />
+        <include
+            android:id="@+id/prot"
+            android:layout_height="match_parent"
+            layout="@layout/protocols_container_layout" />
 
-    <include
-        android:id="@+id/cams"
-        android:layout_height="match_parent"
-        layout="@layout/cams_container_layout" />
+        <include
+            android:id="@+id/cams"
+            android:layout_height="match_parent"
+            layout="@layout/cams_container_layout" />
 
-    <include
-        android:id="@+id/phone"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/phones_container_layout" />
+        <include
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/phones_container_layout" />
+    </ViewFlipper>
 
-	</ViewFlipper>
-    
     <LinearLayout
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="82dp"
         android:layout_margin="0dp"
         android:layout_marginBottom="0dp"
-        android:background="@android:color/black"
+        android:layout_weight="0.98"
         android:gravity="bottom|center"
         android:orientation="horizontal" >
 
         <Button
             android:id="@+id/bSolic"
-            android:layout_width="wrap_content"
+            android:layout_width="137dp"
             android:layout_height="match_parent"
-            android:text="Solicitações" />
+            android:layout_margin="20dp"
+            android:layout_weight="0.95"
+            android:background="@drawable/solicitacoes" />
+
+
 
         <Button
             android:id="@+id/bProt"
-            android:layout_width="wrap_content"
+            android:layout_width="134dp"
             android:layout_height="match_parent"
-            android:text="Protocolos" />
+            android:layout_margin="20dp"
+            android:background="@drawable/protocolo" />
 
         <Button
             android:id="@+id/bCam"
-            android:layout_width="wrap_content"
+            android:layout_width="129dp"
             android:layout_height="match_parent"
-            android:text="Câmeras" />
+            android:layout_margin="20dp"
+            android:background="@drawable/cameras" />
 
         <Button
             android:id="@+id/bTel"
-            android:layout_width="match_parent"
+            android:layout_width="81dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.19"
-            android:text="Telefones Úteis" />
+            android:layout_margin="20dp"
+            android:layout_weight="0.06"
+            android:background="@drawable/telefone" />
 
     </LinearLayout>
 
