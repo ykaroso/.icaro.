@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mainLayout"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="match_parent"
     android:background="#00649F"
     android:orientation="vertical" >
 
@@ -35,7 +35,7 @@
     <ViewFlipper
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="689dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1" >
 
         <include
@@ -64,7 +64,7 @@
     <LinearLayout
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
-        android:layout_height="82dp"
+        android:layout_height="wrap_content"
         android:layout_margin="0dp"
         android:layout_marginBottom="0dp"
         android:layout_weight="0.98"
@@ -73,36 +73,35 @@
 
         <Button
             android:id="@+id/bSolic"
-            android:layout_width="137dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_weight="0.95"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:background="@drawable/solicitacoes" />
-
-
 
         <Button
             android:id="@+id/bProt"
-            android:layout_width="134dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:background="@drawable/protocolo" />
 
         <Button
             android:id="@+id/bCam"
-            android:layout_width="129dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:background="@drawable/cameras" />
 
         <Button
             android:id="@+id/bTel"
-            android:layout_width="81dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_weight="0.06"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:background="@drawable/telefone" />
-
     </LinearLayout>
 
 </LinearLayout>
