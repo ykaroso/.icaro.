@@ -64,17 +64,16 @@
     <LinearLayout
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="118dp"
         android:layout_margin="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_weight="0.98"
         android:gravity="bottom|center"
         android:orientation="horizontal" >
 
         <Button
             android:id="@+id/bSolic"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/solicitacoes" />
@@ -82,7 +81,7 @@
         <Button
             android:id="@+id/bProt"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/protocolo" />
@@ -90,7 +89,7 @@
         <Button
             android:id="@+id/bCam"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/cameras" />
@@ -98,7 +97,7 @@
         <Button
             android:id="@+id/bTel"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/telefone" />

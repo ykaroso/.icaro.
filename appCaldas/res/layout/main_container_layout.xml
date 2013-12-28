@@ -13,7 +13,10 @@
         android:id="@+id/widget000"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="200dp"
         android:layout_weight="1"
         android:gravity="center" >
 
@@ -27,7 +30,7 @@
                 android:id="@+id/bCallSolic0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="20dp"
+                android:layout_margin="25dp"
                 android:layout_weight="1"
                 android:background="@drawable/semaforo" />
 
@@ -35,7 +38,7 @@
                 android:id="@+id/bCallSolic1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="20dp"
+                android:layout_margin="25dp"
                 android:layout_weight="1"
                 android:background="@drawable/pista" />
         </LinearLayout>
@@ -50,7 +53,7 @@
                 android:id="@+id/bCallSolic2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_margin="25dp"
                 android:layout_weight="1"
                 android:background="@drawable/lampada" />
 
@@ -58,7 +61,7 @@
                 android:id="@+id/bCallSolic3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_margin="25dp"
                 android:layout_weight="1"
                 android:background="@drawable/caminhao" />
         </LinearLayout>
