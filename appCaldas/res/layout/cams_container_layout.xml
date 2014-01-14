@@ -5,18 +5,10 @@
     android:layout_height="match_parent"
     android:layout_weight="0.41"
     android:background="@drawable/background"
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingBottom="5dp" >
 
-    <TextView
-        android:id="@+id/lTipoSolic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="9dp"
-        android:text="Cameras"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,19 +16,87 @@
         android:layout_marginRight="20dp"
         android:gravity="center" >
 
-        <ImageButton
-            android:id="@+id/bCam0"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
+            android:orientation="vertical" >
 
-        <ImageButton
-            android:id="@+id/bCam1"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
+            <ImageButton
+                android:id="@+id/bCam0"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera" 
+                />
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/bCam1"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/bCam2"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera"  />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -46,19 +106,87 @@
         android:layout_marginRight="20dp"
         android:gravity="center" >
 
-        <ImageButton
-            android:id="@+id/bCam2"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
+            android:orientation="vertical" >
 
-        <ImageButton
-            android:id="@+id/bCam3"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
+            <ImageButton
+                android:id="@+id/bCam3"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera"  />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/bCam4"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera"  />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/bCam5"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera"  />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -68,42 +196,86 @@
         android:layout_marginRight="20dp"
         android:gravity="center" >
 
-        <ImageButton
-            android:id="@+id/bCam4"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
+            android:orientation="vertical" >
 
-        <ImageButton
-            android:id="@+id/bCam5"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
+            <ImageButton
+                android:id="@+id/bCam6"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera"  />
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
-    </LinearLayout>
+            android:orientation="vertical" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center" >
+            <ImageButton
+                android:id="@+id/bCam7"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera"  />
 
-        <ImageButton
-            android:id="@+id/bCam6"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
+            android:orientation="vertical" >
 
-        <ImageButton
-            android:id="@+id/bCam7"
-            android:layout_width="123dp"
-            android:layout_height="103dp"
-            android:layout_weight="0.10"
-            android:src="@android:drawable/ic_menu_mapmode" />
+            <ImageButton
+                android:id="@+id/bCam8"
+                android:layout_width="123dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:background="@drawable/icones_camera"  />
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:text="Rua - Machado de Assis 125"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

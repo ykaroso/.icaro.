@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import domain.Adapter;
 import domain.Solicitation;
 import domain.DadosCamera;
 import domain.Telefones;
@@ -19,6 +20,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ExpandableListView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ViewFlipper;
@@ -41,11 +43,6 @@ public class MainActivity extends Activity implements OnClickListener{
 	private final static int b1 = R.id.bCallSolic1;
 	private final static int b2 = R.id.bCallSolic2;
 	private final static int b3 = R.id.bCallSolic3;
-	//private final static int b4 = R.id.bCallSolic4;
-	//private final static int b5 = R.id.bCallSolic5;
-	//private final static int b6 = R.id.bCallSolic6;
-	//private final static int b7 = R.id.bCallSolic7;
-	//private final static int b8 = R.id.bCallSolic8;
 	
 	
 	//Botões da tela das cameras - cams_container
@@ -163,15 +160,14 @@ public class MainActivity extends Activity implements OnClickListener{
 						(Button)findViewById(b1),
 						(Button)findViewById(b2),
 						(Button)findViewById(b3),};
-						/*(Button)findViewById(b4),
-						(Button)findViewById(b5),
-						(Button)findViewById(b6),
-						(Button)findViewById(b7),
-						(Button)findViewById(b8)};*/
+				
 				for(int i  = 0; i < buttonsSolicita.length; i++)
 					buttonsSolicita[i].setOnClickListener(this);
 			break;
 			case CONTAINER_PROTOCOLOS:
+				ExpandableListView listView = (ExpandableListView) findViewById(R.id.expandableListView1);
+				listView.setAdapter(new Adapter(this));
+				
 			break;
 			case CONTAINER_CAMERAS:
 				ImageButton buttonsCam[] = {(ImageButton)findViewById(bCam0),(ImageButton)findViewById(bCam1),
@@ -232,21 +228,6 @@ public class MainActivity extends Activity implements OnClickListener{
 	    	case b3:
 	    		it = new Intent(this, RegisterSolicitation.class);
 	    		it.putExtra("paramTitle",solicitation.getTypeName(3));break;
-	    	/*case b4:
-	    		it = new Intent(this, RegisterSolicitation.class);
-	    		it.putExtra("paramTitle",solicitation.getTypeName(4));break;
-	    	case b5:
-	    		it = new Intent(this, RegisterSolicitation.class);
-	    		it.putExtra("paramTitle",solicitation.getTypeName(5));break;
-	    	case b6:
-	    		it = new Intent(this, RegisterSolicitation.class);
-	    		it.putExtra("paramTitle",solicitation.getTypeName(6));break;
-	    	case b7:
-	    		it = new Intent(this, RegisterSolicitation.class);
-	    		it.putExtra("paramTitle",solicitation.getTypeName(7));break;
-	    	case b8:
-	    		it = new Intent(this, RegisterSolicitation.class);
-	    		it.putExtra("paramTitle",solicitation.getTypeName(8));break;*/
 	    	//FIM main_container
 	    	
 	    	

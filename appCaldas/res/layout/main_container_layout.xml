@@ -16,7 +16,7 @@
         android:layout_marginBottom="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_weight="1"
         android:gravity="center" >
 
@@ -34,13 +34,33 @@
                 android:layout_weight="1"
                 android:background="@drawable/semaforo" />
 
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Semáforos"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
             <Button
                 android:id="@+id/bCallSolic1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="70dp"
                 android:layout_weight="1"
                 android:background="@drawable/pista" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Problemas na Via"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -57,13 +77,33 @@
                 android:layout_weight="1"
                 android:background="@drawable/lampada" />
 
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Iluminação Pública"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
             <Button
                 android:id="@+id/bCallSolic3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="70dp"
                 android:layout_weight="1"
                 android:background="@drawable/caminhao" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Limpeza Urbana"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
         </LinearLayout>
 
     </LinearLayout>

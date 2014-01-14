@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="250dp"
             android:layout_weight="0.00"
+            android:background="#00649F"
             android:text=" " />
 
         <Button
@@ -70,37 +71,109 @@
         android:gravity="bottom|center"
         android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/bSolic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/solicitacoes" />
+            android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/bProt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/protocolo" />
+            <Button
+                android:id="@+id/bSolic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/solicitacoes" />
 
-        <Button
-            android:id="@+id/bCam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/cameras" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:text="Solicitações"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#00FFFF" />
 
-        <Button
-            android:id="@+id/bTel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/telefone" />
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bProt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/protocolo" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:text="Protocolos"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#00FFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bCam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/cameras" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:text="Cameras"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#00FFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bTel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/telefone" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:text="Telefones"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#00FFFF" />
+
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

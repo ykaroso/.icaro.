@@ -1,7 +1,16 @@
 package domain;
 
 public class DadosCamera {
-	private String links[] = {"rtmp://www.streambnu.info:1935/goiania3","","","","","","",""};
+	private String links[] = {
+			"",
+			"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
+			"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
+			"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
+			"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
+			"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
+			"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
+			"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov"};
+	
 	private String titles[] = {"Camera 0","Camera 1","Camera 2","Camera 3","Camera 4","Camera 5","Camera 6","Camera 7"};
 	
 	public String getLinkStream(int id){

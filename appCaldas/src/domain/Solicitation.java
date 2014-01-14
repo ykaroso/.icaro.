@@ -14,15 +14,11 @@ public class Solicitation {
 	int tipoRef;
 	Calendar data;
 	String[] tipo = {
-			"Sinal de Trânsito",
-			"Bucaro na Via",
-			"Limpeza Urbana",
-			"Iluminção Pública",
-			"Tipo de Solicitação (4)",
-			"Tipo de Solicitação (5)",
-			"Tipo de Solicitação (6)",
-			"Tipo de Solicitação (7)",
-			"Tipo de Solicitação (8)"};
+			"Semáforos",
+			"Problemas na Via",
+			"Iluminação Pública",
+			"Limpeza Urbana"};
+	
 	int[] tempoReparo = {
 			3,7,10,5,5};
 	
